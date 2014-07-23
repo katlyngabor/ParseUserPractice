@@ -1,3 +1,2 @@
-## Yo, I'm a Readme
+Setting up a basic parse user sign-in form.
 
-You should probably update me so people looking at your code have an idea what it is being used for :)

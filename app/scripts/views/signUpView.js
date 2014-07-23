@@ -1,4 +1,3 @@
-
 Parse.initialize("6gGK63GTHMwX7lnyuvWAXAzFUgLYP77ij2zfnlgD", "764pOAlIIUrlViscttYLY834OcAaWXyFpzO3lrcb");
 
 var SignUpView = Backbone.View.extend({
@@ -33,6 +32,3 @@ var SignUpView = Backbone.View.extend({
 }
 
 });
-
-
-

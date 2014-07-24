@@ -2,23 +2,27 @@ Parse.initialize("6gGK63GTHMwX7lnyuvWAXAzFUgLYP77ij2zfnlgD", "764pOAlIIUrlVisctt
 
 var SignUpView = Backbone.View.extend({
 
-	className: 'signUp',	
-
-	el:'.	signUpContainer',
+	el:'.wrapper',
 
 	events:{
-		'click .submit' : 'setNewUser'
+		'click .submit' : 'setNewUser',
+		'click .submit1' : 'logInUser'
 	},
+		
+
+
+	// var currentUser = Parse.User.current();
+	// 	if (currentUser) {
+ //    // do stuff with the user
+	// 	} else {
+ //    // show the signup or login page
+	// 	},
 
 	setNewUser: function(){
-		console.log('buttony');
 		var user = new Parse.User();
-		user.set("username", $('#username').val() );
-		user.set("password", "my pass");
-		user.set("email", "email@example.com");
+		user.set("username", $('#userName').val() );
+		user.set("password", $('#password').val() );
 		 
-		// other fields can be set just like with Parse.Object
-		user.set("phone", "415-392-0202");
 		 
 		user.signUp(null, {
 		  success: function(user) {
@@ -29,6 +33,22 @@ var SignUpView = Backbone.View.extend({
 		    alert("Error: " + error.code + " " + error.message);
 		  }
 	});
-}
+},
+
+	logInUser: function(){
+		Parse.User.logIn($('#userName1').val(), $('#password1').val(), {
+		  success: function(user) {
+		   	$('.wrapper').hide();
+		   	$('.loggedInContainer').show();
+		   	
+		  },
+		  error: function(user, error) {
+		    // The login failed. Check error to see why.
+		  }
+		});
+
+	}
+
+
 
 });

@@ -26,12 +26,24 @@
     
   </head>
   <body>
+    <div class='wrapper'>
+        <div class="signUpContainer">
+            <div class="signUpText">New user? Let's start here!</div> 
+            <input type=text id="userName" placeholder="Whatcha wanna be called?"/>
+            <input type=text id="password" placeholder="Shh.. password goes here."/>
+            <button class="submit">Sign Up</button>
+        </div>
 
-    <div class="signUpContainer">
-        <div class="signUpText">Fill this out, please...</div> 
-        <input type=text id="userName" placeholder="Whatcha wanna be called?"/>
-        <input type=text id="password" placeholder="Shh.. password goes here."/>
-        <button class="submit">Submit</button>
+         <div class="logInContainer">
+            <div class="logInText">Already a user? Welcome back!</div> 
+            <input type=text id="userName1" placeholder="Remind me who you are."/>
+            <input type=text id="password1" placeholder="Shh.. password goes here."/>
+            <button class="submit1">Login</button>
+        </div>
+    </div>
+
+    <div class="loggedInContainer">
+        <button class="logOutBtn">Log Out</button>
     </div>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

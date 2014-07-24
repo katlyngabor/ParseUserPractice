@@ -2,22 +2,72 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-.signUpContainer{
-  margin:0 auto;
-  text-align:center;
-  width:300px;
-  margin-top:200px;
-  color:#6089bf;
+
+.wrapper{
+  float:left;
+  width:1200px;
+  margin-left:350px;
+  margin-top:150px;
 }
-  .signUpText{
-    padding:20px;
-  }
-  #userName{
-    padding:5px;
-    width:250px;
-    margin-bottom:15px;
-  }
-  #password{
-    padding:5px;
-    width:250px;
-  }
+
+.signUpContainer{
+  width:300px;
+  color:#6089bf;
+  float:left;
+}
+
+.signUpText{
+   padding:20px;
+}
+  
+#userName{
+  padding:5px;
+  width:250px;
+  margin-bottom:15px;
+}
+
+#password{
+  padding:5px;
+  width:250px;
+}
+
+.submit{
+  margin-top:25px;
+}
+
+//login
+
+
+.logInContainer{
+ 
+  width:300px;
+  color:#6089bf;
+  float:left;
+}
+
+.logInText{
+   padding:20px;
+}
+  
+#userName1{
+  padding:5px;
+  width:250px;
+  margin-bottom:15px;
+}
+
+#password1{
+  padding:5px;
+  width:250px;
+}
+
+.submit1{
+  margin-top:25px;
+}
+
+.logOutBtn{
+  visibility:hidden;
+}
+
+.showBtn{
+  visibility:visible;
+}
